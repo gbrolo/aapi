@@ -7,6 +7,7 @@ defmodule AapiWeb.Router do
 
 	scope "/api", AapiWeb do
 		pipe_through :api
+		resources "/auctions", AuctionController, except: [:new, :edit]
 	end
 
 	pipeline :browser do

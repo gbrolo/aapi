@@ -1,0 +1,5 @@
+CREATE AUCTION
+curl -X POST http://localhost:4000/api/auctions -H "Content-Type: application/json" -d '{"auction": {"start_time": "11:30:00", "product_id": "103", "bid_value": 350, "user_id": "10akTPVebtZrD9LlUmEZ3TAJfVz2", "end_time": "12:00:00"}}'
+
+UPDATE AUCTION
+curl -X PUT http://localhost:4000/api/auctions/4 -H "Content-Type: application/json" -d '{"auction": {"user_id": "10akTPVebtZrD9LlUmEZ3TAJfVz2", "bid_value":350}}'

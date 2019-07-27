@@ -3,7 +3,7 @@ use Mix.Config
 # Configure your database
 config :aapi, Aapi.Repo,
   username: "postgres",
-  password: "postgres",
+  password: "postgresql",
   database: "aapi_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox
